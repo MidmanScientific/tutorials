@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Client</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Email Client</h1>
+
+        <!-- Sending Email Form -->
+        <form id="sendEmailForm"   action="https://formspree.io/f/xzbleqev" method="POST" >
+            
+            <label for="recipient">Recipient:</label>
+            <input type="email" id="recipient"  name="email" required><br>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="text" required><br>
+            
+            <label for="message">Message:</label>
+            <textarea id="message"  name="textarea" required></textarea><br>
+            
+            <label for="attachment">Attachment:</label>
+            <input type="file" id="attachment"  name="file" ><br>
+            
+            <button type="submit">Send Email</button>
+        </form>
+        </div>
+
+        <!-- Receiving Email (Inbox) -->
+        <div id="inbox">
+            <h2>Inbox</h2>
+            <ul id="emailList">
+                <!-- Display received emails here -->
+            </ul>
+        </div>
+    
